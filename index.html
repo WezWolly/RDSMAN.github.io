@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>RDS Management</title><link href="css/style.css" rel="stylesheet"/></head><body>
+<header><div class="container nav">
+<a href="index.html"><img alt="RDS Management" src="images/logo.png"/></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="vacancies.html">Vacancies</a>
+<a href="contact.html">Contact</a>
+</nav></div></header>
+<section class="hero"><div class="container hero-grid">
+<div><h1>Building Repair &amp; Maintenance Solutions</h1>
+<p>RDS Management delivers reliable, efficient, and cost-effective mechanical and electrical building services across the UK. We support commercial clients with planned maintenance, reactive repairs, compliance services, and specialist M&amp;E solutions to keep buildings safe, efficient, and fully operational.</p>
+<a class="btn" href="contact.html">Get in touch</a></div>
+<div><img alt="Property management" src="images/hero-home.jpg"/></div>
+</div></section>
+<section><div class="container">
+<div class="section-title"><h2>Our range of services</h2><p>We provide a comprehensive range of specialist property and facilities management services.</p></div>
+
+<div class="services-showcase">
+<style>
+.services-circle-section{
+  max-width:1100px;
+  margin:40px auto 20px;
+  padding:20px 10px;
+  font-family:Arial, sans-serif;
+}
+.circle-layout{
+  position:relative;
+  width:900px;
+  height:900px;
+  margin:0 auto;
+}
+.outer-ring{
+  position:absolute;
+  width:620px;
+  height:620px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  border:2px solid #d9e6da;
+  border-radius:50%;
+}
+.service{
+  position:absolute;
+  width:240px;
+  text-align:center;
+  color:#173f22;
+}
+.service .icon{
+  width:120px;
+  height:120px;
+  margin:0 auto 14px;
+  border:2px solid #d9e6da;
+  border-radius:50%;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+.service .icon img{
+  width:76px;
+  height:76px;
+  object-fit:contain;
+  display:block;
+}
+.service h3{
+  margin:0 0 10px;
+  color:#0f6b2d;
+  font-size:18px;
+  line-height:1.2;
+}
+.service p{
+  margin:0;
+  font-size:15px;
+  line-height:1.55;
+  color:#2d2d2d;
+}
+
+/* FIXED POSITIONS - THESE WILL NOT CHANGE */
+.mechanical{
+  left:50%;
+  top:0;
+  transform:translateX(-50%);
+}
+.electrical{
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+.cleaning{
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+.safety{
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+}
+
+.center-consultancy{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  border:2px solid #d9e6da;
+  background:#f7faf7;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:26px;
+  box-shadow:0 10px 24px rgba(0,0,0,.06);
+}
+.center-consultancy .icon{
+  width:120px;
+  height:120px;
+  margin:0 auto 12px;
+  border:2px solid #d9e6da;
+  border-radius:50%;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.center-consultancy .icon img{
+  width:76px;
+  height:76px;
+  object-fit:contain;
+}
+.center-consultancy h3{
+  margin:0 0 10px;
+  color:#0f6b2d;
+  font-size:20px;
+}
+.center-consultancy p{
+  margin:0;
+  font-size:15px;
+  line-height:1.55;
+  color:#2d2d2d;
+}
+
+@media (max-width:980px){
+  .circle-layout{
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  .outer-ring{display:none}
+  .service,
+  .center-consultancy{
+    position:static;
+    transform:none;
+    width:100%;
+    max-width:340px;
+    margin:0 auto;
+  }
+  .center-consultancy{
+    height:auto;
+    border-radius:28px;
+  }
+}
+</style>
+<div class="services-circle-section">
+<div class="circle-layout">
+<div class="outer-ring"></div>
+<div class="service mechanical">
+<div class="icon">
+<img alt="Mechanical Services" src="images/mechanical.jpg"/>
+</div>
+<h3></h3>
+<p>Planned and reactive mechanical maintenance, HVAC support and building services coordination.</p>
+</div>
+<div class="service electrical">
+<div class="icon">
+<img alt="Electrical Services" src="images/electrical.jpg"/>
+</div>
+<h3></h3>
+<p>Commercial electrical maintenance, inspections and installation support for managed properties.</p>
+</div>
+<div class="service cleaning">
+<div class="icon">
+<img alt="Cleaning Services" src="images/cleaning.jpg"/>
+</div>
+<h3></h3>
+<p>Professional communal and commercial cleaning services delivered to a consistently high standard.</p>
+</div>
+<div class="service safety">
+<div class="icon">
+<img alt="Health &amp; Safety" src="images/safety.jpg"/>
+</div>
+<h3></h3>
+<p>Compliance support, inspections and practical health &amp; safety management assistance.</p>
+</div>
+<div class="center-consultancy">
+<div class="icon">
+<img alt="Consultancy" src="images/consultancy.jpg"/>
+</div>
+<h3></h3>
+<p>Property management consultancy, reporting, budgeting support and operational advice.</p>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<section><div class="container">
+<div class="sectors-banner">
+<h2>Sectors</h2>
+<div class="sectors-lists">
+<div><h3>Public Sectors</h3><ul>
+<li>Local Authority</li>
+<li>Housing Association</li>
+<li>Education</li>
+<li>NHS</li>
+</ul></div>
+<div><h3>Private Sectors</h3><ul>
+<li>Self-Funded</li>
+<li>Schools and Colleges</li>
+<li>Office Fit Outs</li>
+<li>Commercial Fit Outs</li>
+<li>Private Developments</li>
+</ul></div>
+</div></div></div></section>
+<footer><div class="container">
+<p><strong>RDS Management</strong> — LS17 1JF</p>
+<p><a href="privacy.html">Privacy Notice</a></p>
+</div></footer>
+</body></html>
