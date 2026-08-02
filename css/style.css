@@ -11,9 +11,49 @@
 body{margin:0;font-family:Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
 .container{width:min(1180px,92%);margin:auto}
 header{border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:20}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-.nav img{height:56px}
-nav a{margin-left:24px;color:var(--text);text-decoration:none;font-weight:600}
+
+header{
+  border-bottom:1px solid var(--border);
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:20;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:40px;
+  padding:6px 0;
+}
+
+.nav img{
+  height:110px;
+  width:auto;
+  display:block;
+}
+
+nav{
+  display:flex;
+  gap:24px;
+}
+
+nav a{
+  margin-left:0;
+  color:var(--text);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.hero{
+  padding:72px 0;
+  background:var(--soft);
+}
+
+
+
+
 .hero{padding:72px 0;background:var(--soft)}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
 .hero h1{font-size:3rem;margin:0 0 16px}
